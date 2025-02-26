@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <string>  // Include this to use string
+#include <string>  
 using namespace std;
 
 class Book {
@@ -43,7 +43,7 @@ int main() {
     do {
         cout << "\n1 - Add book, 2 - Display all books, 3 - Exit: ";
         cin >> choice;
-        cin.ignore();  // Clear input buffer
+        cin.ignore();  
 
         if (choice == 1) {
             do {
@@ -64,7 +64,7 @@ int main() {
 
                 cout << "\nWant to add more books? (y/n): ";
                 cin >> addMore;
-                cin.ignore(); // Clear input buffer
+                cin.ignore(); 
 
             } while (addMore == 'Y' || addMore == 'y');
         }
@@ -80,7 +80,7 @@ int main() {
         }
         else if (choice == 3) {
             cout << "Exiting program.\n";
-            break; // Exit the loop and end the program
+            break; 
         }
         else {
             cout << "Invalid choice. Please try again.\n";
